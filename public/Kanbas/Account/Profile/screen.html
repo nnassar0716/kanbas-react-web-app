@@ -1,66 +1,89 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+</head>
 
 <body>
-    <table>
-        <thead>
-            <tr>
-                <td valign="top">
-                    <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">
-                                Account</a></li>
-                        <li>
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#">Calendar</a>
-                        </li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolios</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Qwickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td>
-                    Nathan Nassar's Profile</br></br></br>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <font size="6">Nathan Nassar</font></br></br>
-                                    <font size="5">Contact</font></br></br>
-                                    No Registered Services.</br></br>
-                                    <font size="5">Biography</font></br></br>
-                                    Student, Computer Science, Math, and film/tv enthusiast.</br></br>
-                                    <font size="5">Links</font></br></br>
-                                    <a href="https://www.linkedin.com/in/nathan-nassar/">LinkedIn</a></br></br>
-                                </td>
-                                <td valign="top">
-                                    <a href="/Kanbas/Account/Profile/Edit/screen.html"><button>&#x270E; Edit Profile</button></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
+    <div class="d-flex">
+        <div>
+            <ul class="wd-kanbas-navigation">
+                <li><a href="http://northeastern.edu">N</a></li>
+                <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="far fa-user wd-icon-account"></i> Account</a></li>
+                <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fas fa-book"></i> Courses</a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-calendar-check"></i> Calendar</a>
+                </li>
+                <li><a href="#"><i class="fas fa-envelope-open-text"></i> Inbox</a></li>
+                <li><a href="#"><i class="far fa-clock"></i> History</a></li>
+                <li><a href="#"><i class="fas fa-play-circle"></i> Studio</a></li>
+                <li><a href="#"><i class="fab fa-creative-commons-sa"></i> Commons</a></li>
+                <li><a href="#"><i class="far fa-question-circle"></i> Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wd-navigation">
+                <li>
+                    <a href="/Kanbas/Courses/Home/screen.html">
+                        Home</a>
+                </li>
+                <li><a href="/Kanbas/Courses/Modules/screen.html">
+                        Modules</a></li>
+                <li><a href="#">
+                        Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">
+                        Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcments</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+        <div>
+            Nathan Nassar's Profile</br></br></br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <font size="6">Nathan Nassar</font></br></br>
+                            <font size="5">Contact</font></br></br>
+                            No Registered Services.</br></br>
+                            <font size="5">Biography</font></br></br>
+                            Student, Computer Science, Math, and film/tv enthusiast.</br></br>
+                            <font size="5">Links</font></br></br>
+                            <a href="https://www.linkedin.com/in/nathan-nassar/">LinkedIn</a></br></br>
+                        </td>
+                        <td valign="top">
+                            <a href="/Kanbas/Account/Profile/Edit/screen.html"><button>&#x270E; Edit
+                                    Profile</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
-</head>
 
 </html>
