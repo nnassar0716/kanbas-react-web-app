@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "RS101",
+        "name": "Rocket Propulsion",
+        "number": "RS4550",
+        "section": "30311",
+        "semester_id": "202430",
+        "semester": "Spring 2024 Semester Full Term",
+        "section_num": "1",
+        "image": "goat2.jpeg"
+    },
+    {
+        "_id": "RS102",
+        "name": "Aerodynamics",
+        "number": "RS4560",
+        "section": "30311",
+        "semester_id": "202430",
+        "semester": "Spring 2024 Semester Full Term",
+        "section_num": "1",
+        "image": "lebum2.jpeg"
+    },
+    {
+        "_id": "RS103",
+        "name": "Spacecraft Design",
+        "number": "RS4570",
+        "section": "30311",
+        "semester_id": "202430",
+        "semester": "Spring 2024 Semester Full Term",
+        "section_num": "1",
+        "image": "snake.jpeg"
+    }
+]
