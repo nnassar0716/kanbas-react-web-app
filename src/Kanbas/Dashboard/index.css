@@ -90,3 +90,34 @@
     color: lightgrey;
     font-size: 24px;
 }
+
+.btn-add .btn-update {
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 22px;
+}
+
+.btn-add {
+    background-color: green;
+}
+
+.btn-add:hover {
+    background-color: darkgreen;
+}
+
+.btn-update {
+    background-color: blue;
+}
+
+.btn-update:hover {
+    background-color: darkblue;
+}

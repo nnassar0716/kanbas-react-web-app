@@ -34,3 +34,110 @@
 .text-indent {
     margin-left: 30px;
 }
+
+.btn-add,
+.btn-update {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    border-radius: 22px;
+}
+
+.btn-add {
+    background-color: green;
+}
+
+.btn-add:hover {
+    background-color: darkgreen;
+}
+
+.btn-update {
+    background-color: blue;
+}
+
+.btn-update:hover {
+    background-color: darkblue;
+}
+
+
+.input-group .module-input,
+.input-group .module-textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border-left: none;
+}
+
+.input-group .module-input::placeholder,
+.input-group .module-textarea::placeholder {
+    font-weight: bold;
+    color: #000;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.module-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    border-radius: 22px;
+    margin: 0 2px;
+}
+
+.btn-edit {
+    background-color: green; 
+}
+
+.btn-edit:hover {
+    background-color: darkgreen; 
+}
+
+.btn-delete {
+    background-color: red; 
+}
+
+.btn-delete:hover {
+    background-color: darkred; 
+}
+
+.edit-delete-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.module-info {
+    display: flex;
+    align-items: center;
+}
