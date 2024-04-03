@@ -1,5 +1,5 @@
 import { courses, modules } from "../../Kanbas/Database";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -7,14 +7,27 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import "./index.css";
-import {FaAngleRight} from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
+import axios from "axios";
 
 
 
-function Courses({courses}: {courses: any[]}) {
+function Courses() {
     const { courseId } = useParams();
+    const COURSES_API = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState<any>({ _id: "" });
+    const findCourseById = async (courseId?: string) => {
+        const response = await axios.get(
+            `${COURSES_API}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
     const location = useLocation();
-    const course = courses.find((course) => course._id === courseId);
     const module = modules.find((module) => module.course === courseId);
     const [isNavVisible, setIsNavVisible] = useState(true);
 
@@ -53,7 +66,7 @@ function Courses({courses}: {courses: any[]}) {
                 <button type="button" className="icon" onClick={toggleNavVisibility}>
                     <HiMiniBars3 />
                 </button>
-                {course ? `${course.number}.${course.section}.${course.semester_id}` : 'Loading...'} {<FaAngleRight/>} {currentPageName}
+                {course ? `${course.number}` : 'Loading...'} {<FaAngleRight />} {currentPageName}
             </h1>
             <hr />
             <div className="courseContent">
