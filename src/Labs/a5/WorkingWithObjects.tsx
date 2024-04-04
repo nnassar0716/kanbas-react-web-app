@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function WorkingWithObjects() {
     const [assignment, setAssignment] = useState({
         id: 1, title: "NodeJS Assignment",
@@ -11,8 +13,8 @@ function WorkingWithObjects() {
         description: "Create a NodeJS server with ExpressJS",
         course: "CS572",
     });
-    const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment"
-    const MODULE_URL = "http://localhost:4000/a5/module"
+    const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`
+    const MODULE_URL = `${API_BASE}/a5/module`
     const fetchAssignment = async () => {
         const response = await axios.get(`${ASSIGNMENT_URL}`);
         setAssignment(response.data);
