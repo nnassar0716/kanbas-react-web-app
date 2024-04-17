@@ -38,10 +38,12 @@ function ModuleList() {
     }, [courseId]);
     const moduleList = useSelector((state: KanbasState) =>
         state.modulesReducer.modules);
+    console.log(moduleList)
     const module = useSelector((state: KanbasState) =>
         state.modulesReducer.module);
     const dispatch = useDispatch();
     const [selectedModule, setSelectedModule] = useState(moduleList[0]);
+
     return (
         <>
             <div className="d-flex justify-content-end" style={{ padding: "20px" }}>
@@ -102,7 +104,7 @@ function ModuleList() {
                                     <FaEllipsisV className="ms-2" />
                                 </span>
                             </div>
-                            {selectedModule._id === module._id && (
+                            {selectedModule?._id === module._id && (
                                 <ul className="list-group">
                                     {module.lessons?.map((lesson: any, index: number) => (
                                         <li className="list-group-item" key={index}>

@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 //import { modules } from "../../Database";
 
 
-const initialState: {modules: any[]; module: any} = {
+const initialState = {
     modules: [],
     module: { _id: "0", name: "New Module 123", description: "New Description" },
 };
